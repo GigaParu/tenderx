@@ -1,0 +1,22 @@
+@import 'base/variables';
+@import 'base/common';
+
+//layout
+@import 'layout/header';
+@import 'layout/navigation';
+@import 'layout/footer';
+
+
+//components
+@import 'components/hero';
+@import 'components/services';
+@import 'components/about';
+@import 'components/pricing';
+@import 'components/faq';
+@import 'components/contact';
+@import 'components/newsletter';
+
+//libs
+@import 'libs/preloader';
+@import 'libs/scroll';
+@import 'libs/aos';

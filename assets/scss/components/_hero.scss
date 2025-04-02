@@ -1,0 +1,96 @@
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .bg-image {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 110%;
+    height: auto;
+    object-fit: cover;
+    z-index: 2;
+    opacity: 0.05;
+  }
+
+  .logo-hero {
+    width: 110%;
+    height: auto;
+    z-index: 3;
+    opacity: 100%;
+  }
+
+  &::before {
+    content: "";
+    background: $color-primary;
+    // background: color-mix(in srgb, $color-accent, transparent 30%);
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+  }
+
+  .container {
+    position: relative;
+    z-index: 3;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 64px;
+    font-weight: 700;
+  }
+
+  p {
+    margin: 5px 0 0 0;
+    font-size: 26px;
+
+    span {
+      letter-spacing: 1px;
+      border-bottom: 2px solid $color-contrast;
+    }
+  }
+
+  .textanim {
+    margin-top: 20px;
+    font-family: $font-heading;
+    font-size: 24px;
+    font-weight: 700;
+    color: $color-contrast;
+  }
+
+  .social-links {
+    margin-top: 25px;
+
+    a {
+      font-size: 24px;
+      display: inline-block;
+      color: $color-contrast;
+      line-height: 1;
+      margin-right: 20px;
+      transition: 0.3s;
+
+      &:hover {
+        color: color-mix(in srgb, $color-contrast, transparent 30%);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+}

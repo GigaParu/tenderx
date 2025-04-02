@@ -1,0 +1,75 @@
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
+.navmenu {
+  padding: 0;
+  z-index: 9997;
+
+  ul {
+    list-style: none;
+    padding: 0 0 20px 0;
+    margin: 0;
+    width: 140px;
+  }
+
+  a,
+  a:focus {
+    color: $nav-color;
+    font-family: $font-nav;
+    display: flex;
+    align-items: center;
+    padding: 10px 18px;
+    margin-bottom: 8px;
+    font-size: 15px;
+    border-radius: 50px;
+    background: color-mix(in srgb, $color-default, transparent 92%);
+    height: 56px;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.3s;
+
+    i {
+      font-size: 20px;
+    }
+
+    span {
+      padding: 0 5px 0 7px;
+    }
+  }
+
+  // Hover & Active states
+  a:hover,
+  li:hover>a {
+    color: $color-contrast;
+    background: $nav-hover-color;
+    max-width: 100%;
+
+    span {
+      display: block;
+    }
+  }
+
+  .active,
+  .active:focus {
+    color: $color-contrast;
+    background: $nav-hover-color;
+
+    span {
+      display: none;
+    }
+  }
+
+  // Responsive - Desktop Minimized Menu
+  @media (min-width: 992px) {
+
+    a,
+    a:focus {
+      max-width: 56px;
+
+      span {
+        display: none;
+      }
+    }
+  }
+}
