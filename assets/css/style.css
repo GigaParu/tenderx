@@ -470,7 +470,7 @@ section,
 .navmenu .active,
 .navmenu .active:focus {
   color: #ffffff;
-  background: #0083c0;
+  background: #00a2ec;
 }
 .navmenu .active span,
 .navmenu .active:focus span {
@@ -564,25 +564,22 @@ section,
   position: absolute;
   inset: 0;
   display: block;
-  width: 110%;
-  height: auto;
+  width: auto;
+  height: 100hv;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 2;
-  opacity: 0.05;
 }
 .hero .logo-hero {
-  width: 110%;
+  width: 100%;
   height: auto;
   z-index: 3;
   opacity: 100%;
 }
 .hero::before {
   content: "";
-  background: #00a2ec;
   position: absolute;
   inset: 0;
-  z-index: 2;
 }
 .hero .container {
   position: relative;
@@ -599,14 +596,14 @@ section,
 }
 .hero p span {
   letter-spacing: 1px;
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid #00a2ec;
 }
 .hero .textanim {
   margin-top: 20px;
   font-family: "BPG Nino Elite Exp Caps", sans-serif;
   font-size: 24px;
   font-weight: 700;
-  color: #ffffff;
+  color: #00a2ec;
 }
 .hero .social-links {
   margin-top: 25px;
